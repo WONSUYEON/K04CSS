@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemberRegist.html</title>
+    <style>
+        *{
+            font-size: 12px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .tabletitle{background-color: #e4e5e9; font-weight: bold; padding: 10px;}
+        .tablecontent{background-color: white; padding: 10px;}
+        input [type='text']{border:1px solid red;}
+        input [type=button]{border:1px solid #afafaf;}
+    </style>
+</head>
+<body>
+    <h2>회원가입 만들기</h2>
+
+    <table border="0" width=670 style="background-color: silver; border-spacing: 1px;">
+        <colgroup>
+        <col width="20%">
+        <col width="80%">
+    </colgroup>
+    <!-- <table border=1 width=670>
+        <colgroup>
+        <col width="20%">
+        <col width="80%"> -->
+    </colgroup>
+    <!-- 뼈대만 잡은거 -->
+        <!-- <tr>
+            <td>*아이디</td>
+            <td>
+                <input type="">
+                <input type="button" value="중복확인">
+                <button type="button">중복확인</button>
+                +4~15자, 첫 영문자, 영문자와 숫자 조합
+            </td>
+        </tr> -->
+
+
+        <tr>
+            <td class="tabletitle">
+              <span style="color: red;">*</span>  아이디
+            </td>
+            <td class="tablecontent">
+                <input type="text" size="15">
+                <input type="button" value="중복확인" style="background-color: black; color: white;">
+                <button type="button">중복확인</button>
+                +4~15자, 첫 영문자, 영문자와 숫자 조합
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tabletitle">
+              <span style="color: red;">*</span>  비밀번호
+            </td>
+            <td class="tablecontent">
+                <input type="text" size="12">
+                
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tabletitle">
+              <span style="color: red;">*</span>  이름
+            </td>
+            <td class="tablecontent">
+                <input type="text" size="15">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tabletitle">
+              <span style="color: red;">*</span>  생년월일
+            </td>
+            <td class="tablecontent">
+                <input type="radio" name="" id="">남자
+                <input type="radio" name="" id="">여자
+                &nbsp;
+                <input type="text" name="" size="4">년
+                <input type="text" name="" size="2">월
+                <input type="text" name="" size="2">일
+
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tabletitle" rowspan="3">
+              <span style="color: red;">*</span>  주소
+            </td>
+            <td class="tablecontent">
+                <input type="button" value="우편번호" style="background-color: black; color: white;">
+                <input type="text" size="5">
+            </td>
+        </tr>
+
+        <tr>
+            
+            <td class="tablecontent">
+               
+                <input type="text" size="50">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tablecontent" >
+                <input type="text" size="45">
+                +나머지주소
+            </td>
+        </tr>
+
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <form method="post" action="">
+        <div class="container">
+      <div class="insert">
+      
+          <table>
+      <caption><h2>회원가입 양식</h2></caption>
+      
+      <tr>
+          <td class="col1">아이디</td>
+          <td class="col2">
+              <input type="text" name="id" maxlength="10">
+              <input class='but1' type="button" value="중복확인" onclick="">
+          </td>
+      </tr>
+      <tr>
+          <td class="col1">비밀번호</td>
+          <td class="col2">
+              <input type="password" name="pwd" maxlength="16">
+              <p>※비밀번호는 <span class="num">문자, 숫자, 특수문자(~!@#$%^&*)의 조합
+              10 ~ 16자리</span>로 입력이 가능합니다.</p>
+          </td>
+      </tr>
+
+      
+
+      <tr>
+          <td class="col1">비밀번호 확인</td>
+          <td class="col2"><input type="password" name="pwdCheck" maxlength="16"></td>
+      </tr>
+      <tr>
+        <td class="col1">이름</td>
+        <td class="col2"><input type="text" name="name" maxlength="5"></td>
+    </tr>
+
+      <tr>
+          <td class="col1">이메일</td>
+          <td class="col2">
+              <input type="text" name="mailid">
+              <span class="a">@</span>
+              <input type="text" name="email">
+              <select name="mailslc">
+                  <option value="self" selected>직접입력</option>
+                  <option value="naver">naver.com</option>
+                  <option value="gm">gmail.com</option>
+                  <option value="da">daum.com</option>
+                  <option value="yah">yahoo.com</option>
+              </select>
+              <input class='but2' type="button" value="이메일 중복확인" onclick="">
+          </td>
+      </tr>
+      <tr>
+          <td class="col1">학년/반</td>
+          <td class="col2"><select name="grade">
+              <option value="slc1" selected>선택</option>
+              <option value="g1">1</option>
+              <option value="g2">2</option>
+              <option value="g3">3</option>
+              <option value="g4">4</option>
+              <option value="g5">5</option>
+              <option value="g6">6</option>
+          </select>
+   
+          <span class="g">학년</span>
+   
+          <select name="cls">
+              <option value="slc2" selected>선택</option>
+              <option value="c1">1</option>
+              <option value="c2">2</option>
+              <option value="c3">3</option>
+              <option value="c4">4</option>
+              <option value="c5">5</option>
+          </select>
+   
+          <span class="c">반</span>
+          
+          </td>
+   
+      </tr>
+      </table>
+      
+    </div>
+   
+    <div class="create">
+      
+          <input class="but3" type="button" value="가입취소" onclick="">
+          <input class="but4" type="button" value="회원가입" onclick="formCheck(this.form)">
+      
+    </div>
+    </div>
+    </form> -->
+
+</body>
+</html>
