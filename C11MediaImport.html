@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C11MediaImport.html</title>
+
+    <!-- <link rel="stylesheet" href=".style/import.css"> -->
+    <!-- 링크태그는 style태그 바깥에 써야하고 임폴트랑 하는일은 같다-->
+    <style>
+        /*
+        @import
+            - link태그를 대체할 수 있다.
+            - style태그안에서 사용해야 하고 반드시 최상단에 선언해야 한다.
+            - CSS파일에 오류가 있는 경우 다운로드 하지않는다.
+        */
+        @import url('./style/import.css');
+        .content{
+            background-color: black; color: red;
+        }
+        /*
+        @media
+            - 해당 웹페이지를 디바이스의 종류에 따라 각각 다르게 화면을
+            구성할 수 있도록 해준다.
+            - 스크린(모니터)용과 프린터(출력물)용으로 구분할 수 있다.
+        */
+
+        @media screen {
+            .content{ /* 스크린에서는 배경색은 검은바탕에 흰색글씨로 출력된다*/
+                background-color: black; color: white;
+            }
+        }
+        @media print{
+            .content{ /* 출력했을때는 배경색은 붉은바탕에 노란색글씨로 출력된다.*/
+                background-color: red; color: yellow;
+            }
+        }
+        /*
+            모든 웹브라우저는 배경색 출력을 허용하지 않는다. 허용하려면 인쇄 설정으로
+            들어가서 "배경색인쇄"를 체크 해야 한다.
+        */
+    </style>
+
+</head>
+<body>
+    <h2>media 속성</h2>
+    <div class="content">
+        <p>
+            <h3>기사의 제목을 삽입하세요</h3>
+
+            기사의 내용을 삽입하세요
+            국발 요소수 품귀현상이 계속되는 가운데 국내 이커머스 기업 코리아센터가 미국과 독일 일본산 요소수를 국내시장에 긴급 공수한다고 8일 밝혔다.
+
+            요소수는 디젤차량이 배출하는 질소산화물을 감소시켜주는 촉매제로 국내 생산량의 대부분은 중국에서 수입한 요소로 만들고 있지만 최근 중국이 석탄 부족을 이유로 사실상 수출을 막아 국내 요소수의 공급난이 빚어지고 있다.
+            <br><br><br><br>
+            코리아센터가 운영하는 해외직구 플랫폼 몰테일은 자사 인프라를 이용해 국내 시장에 미국과 독일산 브랜드 요소수를 해외 직구로 공급한다.
+            <br><br><br><br>
+            몰테일이 긴급 공수하는 디젤 요소수는 미국석유협회의 인증을 받은 미국 1위 브랜드 9.46L용량의 블루데프(BlueDEF)와 독일산 10L 용량의 애드블루(AdBlue)다.
+            <br><br><br><br><br><br>
+            이 요소수는 모든 디젤 질소산화물 저감장치(SCR) 시스템과 호환이 가능하고 안전한 무독성 및 불연성 제품이다. 몰테일은 일본산 요소수도 추가적으로 공급해 나갈 예정이다.
+                    </p>
+    </div>
+</body>
+</html>
